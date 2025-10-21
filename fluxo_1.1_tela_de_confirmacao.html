@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>tela_de_confirmacao</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <h1> 
-                Resultados da busca
-            </h1>
-        </header>
-        <main> 
-            <img src="img\sesc_moema.jpg" alt="imagem do local">
-            <h1>
-                Bienal Sesc de dança
-            </h1>
-            <h2> 
-                <p> Local: Sesc Moema </p>
-                <p> Data: 26/09/2025 </p>
-                <p> Horário: 08h00 </p>
-                <p> Endereço: R. Clélia, 93 - Água Branca, São Paulo - SP, 05042-000 </p>
-            </h2>
-            <a href="fluxo_1.2_tela_confirmado.html"> 
-                Inscrever-se
-            </a>
-        </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Dança - Detalhes do Evento</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header class="event-detail-header">
+        <button class="back-button" aria-label="Voltar">←</button>
+    </header>
+    
+    <main class="event-detail-main">
+        <div class="event-detail-image">
+            <!-- Alterado para usar a imagem original do usuário -->
+            <img src="img/sesc_moema.jpg" alt="Grupo de Dança - Local do evento">
+        </div>
+        
+        <div class="event-detail-content">
+            <h1>Grupo de Dança</h1>
+            
+            <div class="event-detail-info">
+                <div class="info-item">
+                    <p><strong>Data:</strong> 21/09/2025</p>
+                </div>
+                
+                <div class="info-item">
+                    <p><strong>Local:</strong> R. Clélia, 93 - Água Branca, São Paulo</p>
+                </div>
+                
+                <div class="info-item">
+                    <p><strong>Horário:</strong> 18h30</p>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="action-button confirm-button" aria-label="Confirmar inscrição">✓</button>
+                <button class="action-button save-button" aria-label="Salvar evento">🔖</button>
+            </div>
+        </div>
+    </main>
+    
+    <nav class="bottom-navigation">
+        <ul class="nav-list">
+            <li><button class="nav-button" aria-label="Buscar">🔍</button></li>
+            <li><button class="nav-button" aria-label="Calendário">📅</button></li>
+            <li><button class="nav-button active" aria-label="Localização">📍</button></li>
+            <li><button class="nav-button" aria-label="Salvos">🔖</button></li>
+        </ul>
+    </nav>
+</body>
 </html>
