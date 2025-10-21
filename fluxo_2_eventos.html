@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>
-            Eventos
-        </title>
-        <meta charset="UTF-8">
-    </head>
-    <body> 
-        <aside>
-            <h1> Caminhada Coletiva </h1>
-            <p> Local: Parque Ibirapuera</p>
-        </aside>
-    </body> 
-    <main>
-        <figure>
-            <img src="img\parque-do-ibirapuera.jpg"> 
-        </figure>
-    </main>
-    <footer>
-        <a href="fluxo_2.2_eventos.html">Gostei</a>
-        <a href="fluxo_2.3_eventos.html">Não Gostei</a>
-    </footer>
+<head>
+    <title>Eventos - Grupo de Dança</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body class="event-detail-page">
+    <div class="event-detail-container">
+        <!-- Event Card -->
+        <div class="event-detail-card">
+            <!-- Event Image -->
+            <div class="event-image-container">
+                <img src="img/parque-do-ibirapuera.jpg" alt="Corrida Matinal">
+            </div>
+            
+            <!-- Event Details -->
+            <div class="event-details">
+                <h1 class="event-detail-item"><strong>Corrida Matinal</strong></h1>
+                <p class="event-detail-item"><strong>Data:</strong> 21/09/2025</p>
+                <p class="event-detail-item"><strong>Local:</strong> Praça Prof Rubião Meira</p>
+                <p class="event-detail-item"><strong>Horário:</strong> 07h</p>
+            </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <a href="fluxo_2_eventos.html" class="action-button like-button" aria-label="Gostei">
+                <span>👍</span>
+            </a>
+            <button class="action-button save-button" aria-label="Salvar">
+                <span>🔖</span>
+            </button>
+            <a href="fluxo_2.3_eventos.html" class="action-button dislike-button" aria-label="Não Gostei">
+                <span>👎</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <nav class="bottom-navigation">
+        <ul class="nav-list">
+            <li>
+                <button class="nav-button" aria-label="Buscar">
+                    <span>🔍</span>
+                </button>
+            </li>
+            <li>
+                <button class="nav-button" aria-label="Calendário">
+                    <span>📅</span>
+                </button>
+            </li>
+            <li>
+                <button class="nav-button active" aria-label="Localização">
+                    <span>📍</span>
+                </button>
+            </li>
+            <li>
+                <button class="nav-button" aria-label="Salvos">
+                    <span>🔖</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</body>
 </html>
