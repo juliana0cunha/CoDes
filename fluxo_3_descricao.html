@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Pagina da Maratona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
-     <h1>Maratona: </h1>
-     <img src="img\imagem.jpg" alt="Imagem da Maratona" width="300">
-     <h1>DATA: 21/09/2025</h1>
-     <h2>LOCAL: Praça Professor Rubiao Meira - Butanta</h2>
-     <h3>HORARIO: 07:00</h3>
+<body class="event-detail-page">
+    <main class="event-detail-container">
+        <!-- Botão de voltar -->
+        <button class="back-button" onclick="history.back()">←</button>
+        
+        <!-- Card do evento -->
+        <div class="event-detail-card">
+            <!-- Imagem do evento -->
+            <div class="event-image-container">
+                <img src="img/imagem.jpg" alt="Praça Prof Rubião Meira">
+            </div>
+            
+            <!-- Informações do evento -->
+            <div class="event-details">
+                <p class="event-detail-item"><strong>Data:</strong> 21/09/2025</p>
+                <p class="event-detail-item"><strong>Local:</strong> Praça Prof Rubião Meira</p>
+                <p class="event-detail-item"><strong>Horário:</strong> 07h00</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Navegação inferior -->
+    <nav class="bottom-navigation">
+        <ul class="nav-list">
+            <li><button class="nav-button" aria-label="Buscar">🔍</button></li>
+            <li><button class="nav-button" aria-label="Calendário">📅</button></li>
+            <li><button class="nav-button" aria-label="Localização">📍</button></li>
+            <li><button class="nav-button" aria-label="Favoritos">🔖</button></li>
+        </ul>
+    </nav>
 </body>
 </html>

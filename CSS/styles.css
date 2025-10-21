@@ -12,6 +12,7 @@
   --color-border: #e0e0e0;
   --color-border-dark: #c0c0c0;
   --color-hover: #b0b0b0;
+  --color-green: #4caf50;
 }
 
 /* Reset básico */
@@ -36,7 +37,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-bg-light);
   padding-bottom: 5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -831,13 +832,16 @@ header {
   height: 12.5rem;
   overflow: hidden;
   border-radius: 1.875rem;
+  margin: 0 1.25rem;
   margin-bottom: 1.5rem;
+  max-width: calc(100% - 2.5rem);
 }
 
 .event-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1.875rem;
 }
 
 /* Detalhes do evento */
@@ -895,4 +899,78 @@ header {
   background-color: #f44336;
 }
 
-/* </CHANGE> */
+/* Added styles for event detail page matching the image */
+
+/* Event title styling */
+.event-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 1.25rem 1rem;
+  line-height: 1.3;
+}
+
+/* Event info container */
+.event-info-container {
+  padding: 0 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Event info text styling */
+.event-info-text {
+  font-size: 1.375rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+.event-info-text strong {
+  font-weight: 600;
+}
+
+/* Registration button container */
+.registration-container {
+  padding: 0 1.25rem;
+  margin-top: 2rem;
+}
+
+/* Registration button styling */
+.registration-button {
+  width: 100%;
+  background-color: var(--color-green);
+  color: var(--color-bg-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.25rem 2rem;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-family: "Cabin", sans-serif;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+.registration-button:active {
+  transform: scale(0.98);
+}
+
+/* Back button in header */
+.event-detail-header .back-button {
+  background-color: var(--color-border-dark);
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Bottom navigation styling for event detail page */
+.event-detail-page .bottom-navigation {
+  background-color: var(--color-bg-gray);
+}
+
+.event-detail-page .nav-button svg {
+  color: var(--color-text-primary);
+}
