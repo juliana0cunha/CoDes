@@ -819,3 +819,63 @@ header {
     padding: 0 2rem;
   }
 }
+
+/* <CHANGE> Adicionados estilos específicos para a página de detalhes do evento conforme a imagem */
+
+/* Página de detalhes do evento */
+.event-detail-page {
+  background-color: var(--color-bg-white);
+  border: 0.375rem solid var(--color-bg-blue);
+  max-width: 28.125rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Container principal da página de detalhes */
+.event-detail-container {
+  padding: 1.5rem;
+  padding-bottom: 6rem;
+}
+
+/* Card do evento */
+.event-detail-card {
+  background-color: var(--color-bg-white);
+  border-radius: 1.875rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/* Container da imagem */
+.event-image-container {
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+
+.event-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Detalhes do evento */
+.event-details {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-detail-item {
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.event-detail-item strong {
+  font-weight: 600;
+}
+
+/* </CHANGE> */

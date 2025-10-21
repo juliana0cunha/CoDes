@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>
-            Eventos
-        </title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <h1> Caminhada Coletiva</h1>
-            <p> Local: Parque Ibirapuera</p>
-            <p>Data: Sábado, dia 29/08</p>    
-            <p>Horário: Ás 14:30</p> 
-            <p>Ponto de encontro: Portão 7</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body class="event-detail-page">
+    <main class="event-detail-container">
+        <!-- Botão de voltar -->
+        <button class="back-button" onclick="history.back()">←</button>
+        
+        <!-- Card do evento -->
+        <div class="event-detail-card">
+            <!-- Imagem do evento -->
+            <div class="event-image-container">
+                <img src="img/parque-do-ibirapuera.jpg" alt="Praça Prof Rubião Meira">
+            </div>
             
-        </header>
-        <main>
-        <figure>
-            <img src="img\parque-do-ibirapuera.jpg"> 
-        </figure>
-        </main>
-        <footer>
-            <a href="fluxo_2.4_eventos.html"> Confirmar presença </a>
-            <a href="fluxo_2_eventos.html"> Voltar para página anterior </a>
-        </footer>
-    </body>
+            <!-- Informações do evento -->
+            <div class="event-details">
+                <p class="event-detail-item"><strong>Data:</strong> 21/09/2025</p>
+                <p class="event-detail-item"><strong>Local:</strong> Praça Prof Rubião Meira</p>
+                <p class="event-detail-item"><strong>Horário:</strong> 07h00</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Navegação inferior -->
+    <nav class="bottom-navigation">
+        <ul class="nav-list">
+            <li><button class="nav-button" aria-label="Buscar">🔍</button></li>
+            <li><button class="nav-button" aria-label="Calendário">📅</button></li>
+            <li><button class="nav-button" aria-label="Localização">📍</button></li>
+            <li><button class="nav-button" aria-label="Favoritos">🔖</button></li>
+        </ul>
+    </nav>
+</body>
 </html>
