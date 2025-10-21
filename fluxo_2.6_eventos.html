@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Evento</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Added Google Fonts for Cabin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Added custom styles for larger font and Cabin font family -->
+  <style>
+    body {
+      font-family: 'Cabin', sans-serif;
+    }
+    
+    .event-info-text {
+      font-size: 1.75rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+    
+    .event-info-text strong {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="event-detail-page">
+  <header class="event-detail-header">
+    <button class="back-button" aria-label="Voltar">←</button>
+  </header>
+
+  <main class="event-detail-main">
+    <div class="event-image-container">
+      <!-- Updated image to new park view -->
+      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8kWnPzh6DJhtoxCIKRyoM1dwb80lHA.png" alt="Praça Prof Rubião Meira" class="event-image">
+    </div>
+
+    <div class="event-info-container">
+      <p class="event-info-text"><strong>Data:</strong> 21/09/2025</p>
+      <p class="event-info-text"><strong>Local:</strong> Praça Prof Rubião Meira</p>
+      <p class="event-info-text"><strong>Horario:</strong> 07h00</p>
+    </div>
+  </main>
+
+  <nav class="bottom-navigation">
+    <ul>
+      <li><button class="nav-button" aria-label="Buscar">🔍</button></li>
+      <li><button class="nav-button" aria-label="Calendário">📅</button></li>
+      <li><button class="nav-button" aria-label="Localização">📍</button></li>
+      <li><button class="nav-button" aria-label="Salvar">🔖</button></li>
+    </ul>
+  </nav>
+</body>
+</html>

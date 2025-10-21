@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Evento</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Added Google Fonts for Cabin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Updated styles for title and added action buttons styles -->
+  <style>
+    body {
+      font-family: 'Cabin', sans-serif;
+    }
+    
+    /* Changed text-align from center to left to align with image and buttons */
+    .event-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    
+    .event-info-text {
+      font-size: 1.75rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+    
+    .event-info-text strong {
+      font-weight: 600;
+    }
+    
+    /* Changed justify-content from center to flex-start to align buttons to the left */
+    .action-buttons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding: 1rem 0;
+    }
+    
+    .action-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s;
+    }
+    
+    .action-button:hover {
+      transform: scale(1.1);
+    }
+    
+    .action-button.like {
+      background-color: #4ade80;
+    }
+    
+    .action-button.bookmark {
+      background-color: #d1d5db;
+    }
+    
+    .action-button.dislike {
+      background-color: #fb7185;
+    }
+    
+    .action-button svg {
+      width: 28px;
+      height: 28px;
+      fill: #1f2937;
+    }
+  </style>
+</head>
+<body class="event-detail-page">
+  <header class="event-detail-header">
+    <button class="back-button" aria-label="Voltar">←</button>
+  </header>
+
+  <main class="event-detail-main">
+    <div class="event-image-container">
+      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8kWnPzh6DJhtoxCIKRyoM1dwb80lHA.png" alt="R. Clélia, 93 - Água Branca, São Paulo" class="event-image">
+    </div>
+
+    <div class="event-info-container">
+      <!-- Updated title from "Corrida Matinal" to "Grupo de Dança" -->
+      <h1 class="event-title">Grupo de Dança</h1>
+      
+      <p class="event-info-text"><strong>Data:</strong> 21/09/2025</p>
+      <!-- Updated location from "Praça Prof Rubião Meira" to full São Paulo address -->
+      <p class="event-info-text"><strong>Local:</strong> R. Clélia, 93 - Água Branca, São Paulo</p>
+      <!-- Updated time from "07h00" to "18h30" -->
+      <p class="event-info-text"><strong>Horario:</strong> 18h30</p>
+      
+      <!-- Added action buttons (like, bookmark, dislike) -->
+      <div class="action-buttons">
+        <button class="action-button like" aria-label="Gostei">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+          </svg>
+        </button>
+        
+        <button class="action-button bookmark" aria-label="Salvar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg>
+        </button>
+        
+        <button class="action-button dislike" aria-label="Não gostei">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bottom-navigation">
+    <ul>
+      <li><button class="nav-button" aria-label="Buscar">🔍</button></li>
+      <li><button class="nav-button" aria-label="Calendário">📅</button></li>
+      <li><button class="nav-button" aria-label="Localização">📍</button></li>
+      <li><button class="nav-button" aria-label="Salvar">🔖</button></li>
+    </ul>
+  </nav>
+</body>
+</html>
