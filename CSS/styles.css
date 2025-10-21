@@ -36,7 +36,11 @@ header {
   flex-wrap: wrap;
 }
 
+/* Adicionado estilos para o header da página de calendário */
 .page-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
   margin-bottom: 1.5rem;
 }
 
@@ -470,6 +474,17 @@ main {
 }
 
 .bottom-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 28.125rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Adicionado estilos para a lista de navegação */
+.nav-list {
   list-style: none;
   display: flex;
   justify-content: space-around;
