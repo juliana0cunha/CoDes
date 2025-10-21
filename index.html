@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>tela_inicial</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <h1>
-                tela_inicial
-            </h1>
-        </header>
-        <main>
-            <a href="fluxo_1.1_pesquisa_danca.html">
-                Danca
-            </a>
-            <a href="tela_erro.html">
-                Esportes
-            </a>
-            <a href="tela_erro.html">
-                Cultural
-            </a>
-            <a href="tela_erro.html">
-                Workshop
-            </a>
-        </main>
-        <section>
-            <a href="fluxo_1.2_tela_de_pesquisa.html"> Pesquisar</a>
-            <a href="fluxo_2_eventos.html"> Eventos Sugeridos</a> 
-            <a href="fluxo_3_opcoes.html"> Agenda</a>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias</title>
+  <!-- Linking external CSS file instead of inline styles -->
+  <link rel="stylesheet" href="CSS\styles.css">
+</head>
+<body>
+  <main>
+    <form role="search">
+      <label for="search" class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="search" placeholder="Search" />
+      </label>
+    </form>
 
-    </body>
+    <section>
+      <article>Dança</article>
+      <article>Esportes</article>
+      <article>Cultural</article>
+      <article>Workshop</article>
+      <article>Festival</article>
+      <article>Culinária</article>
+      <article>Parques</article>
+      <article>Shows</article>
+    </section>
+  </main>
+
+  <nav>
+    <ul>
+      <li><button type="button" aria-label="Buscar">🔍</button></li>
+      <li><button type="button" aria-label="Calendário">📅</button></li>
+      <li><button type="button" aria-label="Localização">📍</button></li>
+      <li><button type="button" aria-label="Favoritos">🔖</button></li>
+    </ul>
+  </nav>
+</body>
 </html>
