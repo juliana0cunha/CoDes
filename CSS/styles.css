@@ -1,24 +1,91 @@
-/* Replaced entire CSS with simplified version using CSS variables */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Variáveis de cores */
 :root {
   --bg1: #d4dce4;
   --bg2: #5ba3d0;
   --bg3: #a8c5dd;
 }
 
+/* Estilos gerais do body */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background-color: #f5f5f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* Estilos do header da página de pesquisa */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Botão de voltar circular */
+.botao-voltar {
+  background-color: #c0c0c0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.botao-voltar:hover {
+  background-color: #b0b0b0;
+}
+
+/* Container da busca */
+.container-busca {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+/* Ícone de busca */
+.icone-busca {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Campo de input de busca */
+input[type="text"],
+input[type="search"] {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="search"]::placeholder {
+  color: #666;
+}
+
+/* Estilos para o main */
 main {
   flex: 1;
   padding: 20px;
@@ -27,26 +94,14 @@ main {
   width: 100%;
 }
 
+/* Estilos para formulários */
 form {
   margin-bottom: 20px;
 }
 
+/* Container de busca alternativo */
 .search-container {
   position: relative;
-}
-
-input[type="search"] {
-  width: 100%;
-  padding: 12px 16px 12px 45px;
-  border: none;
-  border-radius: 12px;
-  background-color: #e8e8e8;
-  font-size: 15px;
-  outline: none;
-}
-
-input[type="search"]::placeholder {
-  color: #666;
 }
 
 .search-icon {
@@ -58,6 +113,7 @@ input[type="search"]::placeholder {
   pointer-events: none;
 }
 
+/* Grid de artigos/cards */
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -79,6 +135,7 @@ article:hover {
   transform: scale(1.02);
 }
 
+/* Cores diferentes para cada artigo */
 article:nth-child(1) {
   background-color: var(--bg1);
 }
@@ -111,6 +168,7 @@ article:nth-child(8) {
   background-color: var(--bg3);
 }
 
+/* Navegação inferior */
 nav {
   position: sticky;
   bottom: 0;
@@ -128,6 +186,7 @@ ul {
   margin: 0 auto;
 }
 
+/* Botões gerais */
 button {
   background: none;
   border: none;
@@ -141,7 +200,7 @@ button:hover {
   color: #5ba3d0;
 }
 
-/* Added styles for suggestions page */
+/* Header da página de sugestões */
 .page-header {
   display: flex;
   align-items: center;
@@ -173,12 +232,14 @@ button:hover {
   color: #1a1a1a;
 }
 
+/* Lista de eventos */
 .events-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+/* Cards de eventos */
 .event-card {
   background-color: #7db4d6;
   border-radius: 20px;
@@ -199,6 +260,7 @@ button:hover {
   background-color: var(--bg3);
 }
 
+/* Informações do evento */
 .event-info {
   flex: 1;
 }
@@ -216,6 +278,7 @@ button:hover {
   line-height: 1.4;
 }
 
+/* Imagem do evento */
 .event-image {
   margin: 0;
   width: 80px;

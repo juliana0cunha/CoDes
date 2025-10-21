@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title></title>
+        <title>Pesquisa</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                padding: 20px;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+
+            .botao-voltar {
+                background-color: #c0c0c0;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .botao-voltar:hover {
+                background-color: #b0b0b0;
+            }
+
+            .container-busca {
+                position: relative;
+                width: 100%;
+            }
+
+            .icone-busca {
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #666;
+                font-size: 18px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 12px 15px 12px 45px;
+                border: none;
+                border-radius: 25px;
+                background-color: #e0e0e0;
+                font-size: 16px;
+                outline: none;
+            }
+
+            input[type="text"]::placeholder {
+                color: #666;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1> 
-                Pesquisa
-            </h1>
-        </header>
-        <main> 
-            <input type="text">
-            <a href="fluxo_1.2_tela_pos_busca.html"> 
-                Redirecionar
+            <a href="index.html" class="botao-voltar">
+                ←
             </a>
-        </main>
+            <div class="container-busca">
+                <span class="icone-busca">🔍</span>
+                <input type="text" placeholder="Pesquisar">
+            </div>
+        </header>
     </body>
 </html>
