@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categorias de Eventos</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,36 +15,30 @@
     <form class="search-form">
       <div class="search-container">
         <span class="search-icon">🔍</span>
-        <input type="search" placeholder="Pesquisar" aria-label="Buscar eventos" onclick="window.location.href='fluxo_1.2_tela_de_pesquisa.html' ">
+        <input type="search" id="searchInput" placeholder="Pesquisar" aria-label="Buscar eventos">
       </div>
     </form>
 
     <div class="events-grid">
       <button class="event-category" onclick="window.location.href='fluxo_1.1_pesquisa_danca.html'">Dança</button>
-      
       <button class="event-category">Esportes</button>
-      
       <button class="event-category">Cultural</button>
-      
       <button class="event-category">Workshop</button>
-      
       <button class="event-category">Festival</button>
-      
       <button class="event-category">Culinária</button>
-      
       <button class="event-category">Parques</button>
-      
       <button class="event-category">Shows</button>
     </div>
   </main>
 
   <nav class="bottom-navigation">
     <ul>
-      <li><button class="nav-button" aria-label="Buscar" onclick="window.location.href='fluxo_2.7_eventos.html' ">🔍</button></li>
-      <li><button class="nav-button" aria-label="Calendário" onclick="window.location.href='fluxo_3_opcoes.html' ">📅</button></li>
-      <li><button class="nav-button" aria-label="Localização" onclick="window.location.href='fluxo_2_eventos.html' ">📍</button></li>
+      <li><button class="nav-button" aria-label="Buscar" onclick="window.location.href='fluxo_2.7_eventos.html'">🔍</button></li>
+      <li><button class="nav-button" aria-label="Calendário" onclick="window.location.href='fluxo_3_opcoes.html'">📅</button></li>
+      <li><button class="nav-button" aria-label="Localização" onclick="window.location.href='fluxo_2_eventos.html'">📍</button></li>
       <li><button class="nav-button" aria-label="Salvar">🔖</button></li>
     </ul>
   </nav>
+  <script src="js/script.js"></script>
 </body>
 </html>
